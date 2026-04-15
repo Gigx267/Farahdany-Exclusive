@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farahdany Exclusive | Collection 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --vintage-red: #8B1A1A;
+            --off-white: #F2F2F2;
+        }
+        body { 
+            background-color: var(--off-white); 
+            font-family: 'Space Grotesk', sans-serif;
+            color: #1a1a1a;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+        }
+        .serif-italic { font-family: 'Playfair Display', serif; font-style: italic; }
+        .red-border { border: 2px solid var(--vintage-red); }
+        .bg-red-washed { background-color: var(--vintage-red); color: white; }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 10px;
+        }
+
+        /* Mobile Menu Animation */
+        #mobile-menu {
+            transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+            transform: translateX(100%);
+        }
+        #mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div id="mobile-menu" class="fixed inset-0 bg-[#F2F2F2] z-[100] flex flex-col p-8 overflow-y-auto">
+        <div class="flex justify-between items-start mb-12">
+            <div>
+                <h2 class="text-4xl font-bold tracking-tighter uppercase leading-none">Farahdany</h2>
+                <p class="text-[10px] mt-2 tracking-[0.3em] uppercase opacity-60">Navigation</p>
+            </div>
+            <button onclick="toggleMenu()" class="text-5xl font-light leading-none">&times;</button>
+        </div>
+        <nav class="flex flex-col gap-5">
+               <a href="about.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">About Us </a>
+            <a href="bags.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Bags 💼</a>
+            <a href="abayas.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Abayas</a>
+            <a href="veils.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Veils</a>
+            <a href="wrappers.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Wrappers</a>
+            <a href="sunglasses.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Sunglasses</a>
+            <a href="jewelries.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Jewelries</a>
+            <a href="shoes.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Shoes</a>
+            <a href="turbans.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Turban</a>
+            <a href="perfumes.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">Perfumes</a>
+               <a href="about.html" class="text-4xl font-bold uppercase tracking-tighter hover:text-[#8B1A1A]">About Us </a>
+        </nav>
+        <div class="mt-auto pt-12">
+            <p class="text-[10px] uppercase tracking-widest opacity-40">Abuja, Nigeria</p>
+        </div>
+    </div>
+
+    <header class="flex justify-between items-start mb-12 relative z-10">
+        <div>
+            <h1 class="text-4xl font-bold tracking-tighter uppercase leading-none">Farahdany<br>Exclusive</h1>
+            <p class="text-[10px] mt-2 tracking-[0.3em] uppercase opacity-60">Abuja // Editorial 2026</p>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] mt-2">
+            <a href="#" class="hover:text-[#8B1A1A] transition-colors">Bags 💼</a>
+            <a href="#" class="hover:text-[#8B1A1A] transition-colors">Abayas</a>
+            <a href="#" class="hover:text-[#8B1A1A] transition-colors">Veils</a>
+            <a href="#" class="hover:text-[#8B1A1A] transition-colors">Wrappers</a>
+            <a href="#" class="hover:text-[#8B1A1A] transition-colors">Perfumes</a>
+        </nav>
+
+        <div class="flex flex-col items-end gap-6">
+            <span class="red-border px-4 py-1 text-sm font-bold">COLLECTION 1</span>
+            
+            <button onclick="toggleMenu()" class="group flex flex-col gap-1.5 items-end cursor-pointer">
+                <span class="w-8 h-[2px] bg-black"></span>
+                <span class="w-5 h-[2px] bg-black group-hover:w-8 transition-all"></span>
+                <span class="w-3 h-[2px] bg-black group-hover:w-8 transition-all"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+        <div class="hero-grid">
+            <div class="space-y-4">
+                <div class="red-border aspect-[3/4] overflow-hidden contrast-125">
+                    <img src="https://i.pinimg.com/736x/4b/a8/f3/4ba8f33b3a9dda8c89e98c5f82e0001f.jpg" class="w-full h-full object-cover" alt="Bag Detail">
+                </div>
+                <div class="red-border aspect-[3/4] overflow-hidden">
+                    <img src="https://i.pinimg.com/1200x/36/00/68/360068597c0957af902a7b3236d7f11f.jpg" class="w-full h-full object-cover grayscale brightness-50" alt="Atmospheric">
+                </div>
+            </div>
+
+            <div class="relative pl-4">
+                <div class="red-border h-[70vh] overflow-hidden relative">
+                    <img src="https://i.pinimg.com/1200x/95/c7/5e/95c75e5594da5a36dc68719b784522d7.jpg" class="w-full h-full object-cover" alt="Main Model">
+                    <div class="absolute bottom-20 right-4 text-right">
+                        <h2 class="serif-italic text-4xl md:text-6xl lowercase leading-none text-white">Apirl Collection </h2>
+                        <p class="text-[10px] uppercase tracking-widest mt-2 text-white">— farahdany editorial</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold uppercase mb-4 tracking-tighter">Why You Need Us 🔥</h3>
+                        <ul class="text-sm space-y-3 uppercase tracking-tight font-medium">
+                            <li class="flex items-center gap-2">✔️ Premium quality that lasts</li>
+                            <li class="flex items-center gap-2">✔️ Unique & classy styles</li>
+                            <li class="flex items-center gap-2">✔️ Affordable luxury</li>
+                            <li class="flex items-center gap-2">✔️ For every occasion</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-washed p-6 flex flex-col justify-between">
+                        <p class="text-xs leading-relaxed italic">"Step out looking confident, classy, and unforgettable."</p>
+                        <div class="mt-4">
+                            <p class="text-[10px] uppercase tracking-widest mb-1">Limited Stock Available</p>
+                            <a href="https://wa.me/08118311281" class="text-xl font-bold border-b-2 border-white pb-1">WHATSAPP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-16 border-t-2 border-black pt-8">
+            <div class="flex flex-wrap gap-4 text-sm font-bold uppercase overflow-hidden whitespace-nowrap">
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Bags 💼</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Abayas</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Veils</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Wrappers</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Sunglasses</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Jewelries</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Shoes</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Turban</span> • 
+                <span class="hover:text-[#8B1A1A] cursor-pointer">Perfumes</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-20 py-12 border-t border-black/10 grid md:grid-cols-3 gap-8 items-end">
+        <div>
+            <p class="text-[10px] uppercase font-bold mb-2">Location</p>
+            <p class="text-xs leading-relaxed max-w-[200px]">The Carpenter Plaza, Plot No. 7, 6th Avenue, Gwarinpa II, Abuja</p>
+        </div>
+        <div class="text-center md:text-left">
+            <p class="text-[10px] uppercase font-bold mb-2">Contact</p>
+            <p class="text-xl font-bold tracking-tighter">08118311281</p>
+        </div>
+        <div class="text-right">
+            <p class="serif-italic text-3xl">Farahdany 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
